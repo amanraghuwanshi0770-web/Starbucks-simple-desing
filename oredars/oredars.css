@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    transition: 0.3s;
+}
+
+
+body.dark {
+    background: #121212;
+    color: #eee;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+
+#Searchbar {
+    display: flex;
+    gap: 6px;
+}
+
+#Searchbar input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+#Searchbar button {
+    border-radius: 20px;
+    border: none;
+    padding: 8px 14px;
+    background: #ffcc00;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#Searchbar button:hover {
+    background: #ffb703;
+}
+
+/* MENU */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#darkBtn {
+    padding: 6px 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+
+main {
+    padding: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.card button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background: #1e3c72;
+    color: white;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #2a5298;
+}
+
+
+@media(max-width:768px){
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
